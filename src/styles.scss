@@ -2,3 +2,33 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+.level-1 {
+  p, button {
+    font-size: 0.85vw !important;
+  }
+}
+
+.level-2 {
+  p, button {
+    font-size: 0.9vw !important;
+  }
+}
+
+.level-3 {
+  p, button {
+    font-size: 0.95vw !important;
+  }
+}
+
+.level-4 {
+  p, button {
+    font-size: 1vw !important;
+  }
+}
+
+.level-5 {
+  p, button {
+    font-size: 1.05vw !important;
+  }
+}

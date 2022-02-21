@@ -2,9 +2,17 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Decrease or increase font size</a>
     <div class="ml-auto">
-      <button class="btn text-light" [ngbPopover]="popContent" [popoverTitle]="popTitle">
-        <i class="fa-solid fa-a"></i>
-      </button>
+      <span class="navbar-text me-2">
+        Font size:
+      </span>
+      <div class="btn-group">
+        <button class="btn btn-danger" (click)="decreaseLevel()">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+        <button class="btn btn-success" (click)="increaseLevel()">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
     </div>
   </div>
 </nav>
@@ -12,10 +20,10 @@
 <ng-template #popTitle>Font Size</ng-template>
 <ng-template #popContent>
   <div class="btn-group">
-    <button class="btn btn-danger">
+    <button class="btn btn-danger" (click)="decreaseLevel()">
       <i class="fa-solid fa-minus"></i>
     </button>
-    <button class="btn btn-success">
+    <button class="btn btn-success" (click)="increaseLevel()">
       <i class="fa-solid fa-plus"></i>
     </button>
   </div>

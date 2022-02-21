@@ -1,4 +1,4 @@
-<section class="main">
+<section class="main" [ngClass]="setLevel()">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at tempor diam. Curabitur tempor, quam in fringilla
     porta, magna nisl congue enim, vel gravida lorem arcu a risus. In hac habitasse platea dictumst. Sed quis arcu
     metus.
@@ -40,4 +40,6 @@
   <button class="btn btn-success">
     <i class="fa-solid fa-check"></i> OK
   </button>
+
+  <p>level: {{level}}</p>
 </section>
