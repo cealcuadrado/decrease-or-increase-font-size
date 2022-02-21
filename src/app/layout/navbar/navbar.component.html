@@ -1,0 +1,22 @@
+<nav class="navbar fixed-top navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Decrease or increase font size</a>
+    <div class="ml-auto">
+      <button class="btn text-light" [ngbPopover]="popContent" [popoverTitle]="popTitle">
+        <i class="fa-solid fa-a"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<ng-template #popTitle>Font Size</ng-template>
+<ng-template #popContent>
+  <div class="btn-group">
+    <button class="btn btn-danger">
+      <i class="fa-solid fa-minus"></i>
+    </button>
+    <button class="btn btn-success">
+      <i class="fa-solid fa-plus"></i>
+    </button>
+  </div>
+</ng-template>
