@@ -5,7 +5,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class NavbarService {
-  level: number = 3;
+  level: number = 5;
   subjectLevel = new BehaviorSubject<number>(this.level);
 
   constructor() {}
@@ -24,7 +24,7 @@ export class NavbarService {
   }
 
   increaseLevel(): void {
-    if (this.level + 1 > 5) {
+    if (this.level + 1 > 10) {
       return
     } else {
       this.level++;
